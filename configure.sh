@@ -1,6 +1,8 @@
 #!/bin/sh
 echo "Configuring vim"
 
+mkdir $HOME/.dotfiles/.vim/colors
+
 # Symlink the .vim folder and .vimrc file from the .dotfiles
 rm -rf $HOME/.dotfiles/.vim/bundle/Vundle.vim
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.dotfiles/.vim/bundle/Vundle.vim

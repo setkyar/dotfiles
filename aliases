@@ -1,0 +1,30 @@
+# General
+alias ll="ls -lah" 	# List all, with human readable filesizes
+alias c="clear" 	# Typing th whole word is annoying
+alias h="cd ~/" 	# Go home
+
+alias path='echo $PATH | tr -s ":" "\n"' # Pretty print the path
+
+alias pubkey='cat ~/.ssh/id_rsa.pub | pbcopy' # Copy ssh public key
+
+# Vagrant & Homestead
+alais v="vagrant version && vagrant global-status"
+alias vst="vagrant status"
+alias vup="vagrant up"
+alias vdo="vagrant halt"
+alais vssh="vagrant ssh"
+alais vkill="vagrant destroy"
+vst="vagrant status"
+
+# PHP
+alias insights="./vendor/bin/insights"
+alias lint="git status -s | grep php | awk '{print $2}' | xargs -n1 php -l"
+
+# Laravel
+alais art="php artisan"
+alias serve="art serve"
+alias tinker="art tinker"
+
+# PHPUnit
+alais t="./vendor/bin/phpunit"
+alias tf="t --filter"

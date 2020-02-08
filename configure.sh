@@ -1,4 +1,8 @@
 #!/bin/sh
+echo "Configuring alias"
+rm $HOME/.aliases
+ln -s $HOME/.dotfiles/.aliases $HOME/.aliases
+
 echo "Configuring vim"
 
 mkdir $HOME/.dotfiles/.vim/colors

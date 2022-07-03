@@ -1,10 +1,9 @@
-# General
-alias ll="ls -lah" 	# List all, with human readable filesizes
-alias c="clear" 	# Typing th whole word is annoying
-alias h="cd ~/" 	# Go home
+alias home="cd $HOME"
+alias work="cd $HOME/work"
+alias study="cd $HOME/explore-code"
+alias myip="curl https://checkip.amazonaws.com"
 
 alias path='echo $PATH | tr -s ":" "\n"' # Pretty print the path
-
 alias pubkey='cat ~/.ssh/id_rsa.pub | pbcopy' # Copy ssh public key
 
 # PHP
@@ -19,8 +18,3 @@ alias tinker="art tinker"
 # PHPUnit
 alias t="./vendor/bin/phpunit"
 alias tf="t --filter"
-
-# Include custom aliases
-if [[ -f ~/.aliases.local ]]; then
-    source ~/.aliases.local
-fi

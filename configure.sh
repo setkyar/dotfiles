@@ -1,26 +1,30 @@
 #!/bin/sh
-echo "Configuring alias"
-rm $HOME/.aliases
-ln -s $HOME/.dotfiles/.aliases $HOME/.aliases
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-echo "Configuring vim"
+# Install font
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
+brew install --cask font-jetbrains-mono
 
-mkdir $HOME/.dotfiles/.vim/colors
+# Tools...
+brew install git
+brew install telnet
+brew install jq
+brew install awscli
+brew install tree
+brew install --cask termius
+brew install --cask alacritty
 
-# Symlink the .vim folder and .vimrc file from the .dotfiles
-rm -rf $HOME/.dotfiles/.vim/bundle/Vundle.vim
-git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.dotfiles/.vim/bundle/Vundle.vim
+# Code editors
+brew install --cask visual-studio-code
+brew install --cask sublime-text
 
-# Install atom-dark-256 theme
-wget -O $HOME/.dotfiles/.vim/colors/atom-dark-256.vim https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim
+# Programming related...
+brew install nvm
 
-# Symlink .vim folder
-rm -rf $HOME/.vim
-ln -s $HOME/.dotfiles/.vim $HOME/.vim
+# Brosers...
+brew install --cask google-chrome
+brew install --cask brave-browser
+brew install --cask firefox
 
-# Symlink .vimrc folder
-rm $HOME/.vimrc
-ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
-
-# Symlink .vimrc folder
-vim +PluginInstall +qall
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

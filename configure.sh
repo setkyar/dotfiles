@@ -98,6 +98,9 @@ mkdir $HOME/.ssh
 echo $private_key > $HOME/.ssh/id_rsa
 echo $public_key > $HOME/.ssh/id_rsa.pub
 
+chmod 600 $HOME/.ssh/id_rsa
+chmod 644 $HOME/.ssh/id_rsa.pub
+
 # ask user to provide git username and email
 echo "Please provide your git username"
 git_username=$(cat)

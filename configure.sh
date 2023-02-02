@@ -53,7 +53,6 @@ brew install golang
 # Install miniconda
 brew install --cask miniconda
 conda init
-source /Users/universe/.bash_profile
 
 # Install postgres
 brew install postgres
@@ -77,9 +76,6 @@ brew install --cask firefox
 brew install --cask telegram
 brew install --cask spectacle
 brew install --cask caffeine
-
-# move Spectacle shortcuts
-mv dots/Shortcuts.json $HOME/Library/Application\ Support/Spectacle/Shortcuts.json
 
 # Documencation tools
 npm install -g tldr

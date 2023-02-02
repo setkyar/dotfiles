@@ -78,6 +78,9 @@ brew install --cask telegram
 brew install --cask spectacle
 brew install --cask caffeine
 
+# move Spectacle shortcuts
+mv dots/Shortcuts.json $HOME/Library/Application\ Support/Spectacle/Shortcuts.json
+
 # Documencation tools
 npm install -g tldr
 

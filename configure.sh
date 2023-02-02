@@ -90,3 +90,23 @@ sudo mv ask /usr/local/bin
 
 mkdir $HOME/work
 mkdir $HOME/explore-code
+
+# ask user to provide ssh private key and public key
+echo "Please provide your ssh private key"
+private_key=$(cat)
+echo "Please provide your ssh public key"
+public_key=$(cat)
+
+# create ssh folder
+mkdir $HOME/.ssh
+echo $private_key > $HOME/.ssh/id_rsa
+echo $public_key > $HOME/.ssh/id_rsa.pub
+
+# ask user to provide git username and email
+echo "Please provide your git username"
+git_username=$(cat)
+echo "Please provide your git email"
+git_email=$(cat)
+
+git config --global user.name $git_username
+git config --global user.email $git_email

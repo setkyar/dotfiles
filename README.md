@@ -1,3 +1,3 @@
 # dotfiles
 
-https://github.com/junegunn/vim-plug
+WIP - Will write update very soon!

@@ -1,3 +1,5 @@
+" https://github.com/junegunn/vim-plug
+
 set nocompatible
 
 filetype on

@@ -28,6 +28,7 @@ brew install tree
 brew install ack
 brew install tmux
 brew install bash # latest bash version
+brew install htop
 
 # Terminals
 brew install --cask termius
@@ -36,6 +37,10 @@ brew install --cask alacritty
 # Code editors
 brew install --cask visual-studio-code
 brew install --cask sublime-text
+
+# vim plugin
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Programming related...
 brew install nvm

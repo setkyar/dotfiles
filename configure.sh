@@ -5,13 +5,13 @@ xcode-select –install
 
 # Install ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-sudo mkdir /usr/local/bin
-echo 'PATH="/usr/local/bin:$PATH"' >> /Users/universe/.zprofile
+sudo mkdir -p /usr/local/bin
+echo 'PATH="/usr/local/bin:$PATH"' >> $HOME/.zprofile
 
 #Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/universe/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/universe/.zprofile
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> $HOME/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install font
@@ -52,6 +52,9 @@ export NVM_DIR="$HOME/.nvm"
 # Install node
 nvm install --lts
 
+# Install bun
+curl -fsSL https://bun.sh/install | bash
+
 # Install golang
 brew install golang
 
@@ -68,9 +71,24 @@ brew install --cask sequel-pro
 
 # Install docker and kubernetes
 brew install docker
+brew install --cask docker
 brew install kubectl
 
 brew install --cask tableplus
+
+
+brew install --cask mongodb-compass
+
+brew install --cask postman
+
+# Install outline VPN
+brew install --cask outline-manager
+echo "You have to install outline yourself. Coz, they are not allowing."
+
+# Search better
+brew install --cask alfred
+# set command space as alfred
+
 
 # Install browsers
 brew install --cask google-chrome
@@ -81,9 +99,12 @@ brew install --cask firefox
 brew install --cask telegram
 brew install --cask spectacle
 brew install --cask caffeine
+brew install --cask notion
+brew install --cask rescuetime
 
 # Documencation tools
 npm install -g tldr
+brew install --cask notion
 
 curl -o ask https://github.com/setkyar/ask/releases/download/v1.0.0/ask-darwin-amd64-1.0.0
 sudo chmod +x ask

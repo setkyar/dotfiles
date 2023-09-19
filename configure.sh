@@ -19,6 +19,7 @@ brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 brew install --cask font-jetbrains-mono
 
+
 # Tools...
 brew install git
 brew install telnet
@@ -29,6 +30,7 @@ brew install ack
 brew install tmux
 brew install bash # latest bash version
 brew install htop
+brew install --cask clipy
 
 # Terminals
 brew install --cask termius

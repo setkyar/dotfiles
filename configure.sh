@@ -101,6 +101,8 @@ brew install --cask spectacle
 brew install --cask caffeine
 brew install --cask notion
 brew install --cask rescuetime
+brew install --cask spotify
+
 
 # Documencation tools
 npm install -g tldr

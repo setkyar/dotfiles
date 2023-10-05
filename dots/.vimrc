@@ -1,4 +1,4 @@
-" https://github.com/junegunn/vim-plug
+" ://github.com/junegunn/vim-plug
 
 set nocompatible
 
@@ -63,9 +63,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16_solarized'
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/dist/*,*/uploads/*,*/tests/*
-set list
-set listchars=space:·,tab:›\ ,trail:•,eol:¬,extends:#,nbsp:« " Highlight problematic whitespace
+"set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/dist/*,*/uploads/*,*/tests/*
+"set list
+"set listchars=space:·,tab:›\ ,trail:•,eol:¬,extends:#,nbsp:« " Highlight problematic whitespace
 
 let python_highlight_all=1
 

@@ -7,6 +7,9 @@ xcode-select –install
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo mkdir -p /usr/local/bin
 echo 'PATH="/usr/local/bin:$PATH"' >> $HOME/.zprofile
+brew install zsh-autosuggestions
+echo 'source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> $HOME/.zshrc
+
 
 #Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

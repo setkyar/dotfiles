@@ -128,9 +128,11 @@ brew install --cask notion
 brew install --cask rescuetime
 brew install --cask obs
 brew install tailscale && sudo tailscaled install-system-daemon
+brew install infisical/get-cli/infisical
 
 # Documencation tools
 npm install -g tldr
+brew install google-cloud-sdk
 
 git clone git@github.com:setkyar/bin.git ~/bin
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc

@@ -129,8 +129,9 @@ brew install --cask rescuetime
 brew install --cask obs
 brew install tailscale && sudo tailscaled install-system-daemon
 brew install infisical/get-cli/infisical
+brew install supabase/tap/supabase
 
-# Documencation tools
+
 npm install -g tldr
 brew install google-cloud-sdk
 

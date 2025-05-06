@@ -11,3 +11,9 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
 defaults write -g InitialKeyRepeat -int 15 #sets the key repeat rate to the fastest
 defaults write -g KeyRepeat -int 2 #sets the delay until repeat to the shortest
+
+# Set Dock icon size to smaller (e.g., 36 pixels)
+defaults write com.apple.dock tilesize -int 36
+
+# Restart the Dock to apply changes
+killall Dock

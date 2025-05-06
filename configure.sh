@@ -42,6 +42,9 @@ brew install --cask alacritty
 # Code editors
 brew install --cask visual-studio-code
 brew install --cask sublime-text
+brew install --cask windsurf
+
+brew install --cask obsidian
 
 # vim plugin
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -60,6 +63,9 @@ nvm install --lts
 # Install bun
 curl -fsSL https://bun.sh/install | bash
 
+# Install pnpm
+brew install pnpm
+
 # Install golang
 brew install golang
 
@@ -74,12 +80,19 @@ brew install postgres
 brew install mysql
 brew install --cask sequel-pro
 
+
 # Install docker and kubernetes
-brew install docker
 brew install --cask docker
 brew install kubectl
 
+brew install --cask sequel-ace
 brew install --cask tableplus
+
+
+brew install openjdk
+echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+brew install openjdk@21
 
 
 brew install --cask mongodb-compass
@@ -102,20 +115,26 @@ brew install --cask firefox
 
 # Essential softwares
 brew install --cask telegram
-brew install --cask spectacle
+brew install --cask whatsapp
+brew install --cask lark
+brew install --cask slack
+brew install --cask claude
+brew install --cask chatgpt
+brew install --cask lm-studio
+brew install --cask superwhisper
+brew install --cask rectangle
 brew install --cask caffeine
 brew install --cask notion
 brew install --cask rescuetime
-brew install --cask spotify
-
+brew install --cask obs
+brew install tailscale && sudo tailscaled install-system-daemon
 
 # Documencation tools
 npm install -g tldr
-brew install --cask notion
 
-curl -o ask https://github.com/setkyar/ask/releases/download/v1.0.0/ask-darwin-amd64-1.0.0
-sudo chmod +x ask
-sudo mv ask /usr/local/bin
+git clone git@github.com:setkyar/bin.git ~/bin
+echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
+touch ~/bin/llm.env
 
 mkdir $HOME/work
 mkdir $HOME/explore-code

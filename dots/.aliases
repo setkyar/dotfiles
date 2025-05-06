@@ -1,0 +1,7 @@
+alias home="cd $HOME"
+alias work="cd $HOME/work"
+alias study="cd $HOME/explore-code"
+alias myip="curl https://checkip.amazonaws.com"
+
+alias path='echo $PATH | tr -s ":" "\n"' # Pretty print the path
+alias pubkey='cat ~/.ssh/id_rsa.pub | pbcopy' # Copy ssh public key

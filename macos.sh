@@ -17,3 +17,7 @@ defaults write com.apple.dock tilesize -int 36
 
 # Restart the Dock to apply changes
 killall Dock
+
+
+# Enable "Reduce Motion" for accessibility
+defaults write NSGlobalDomain com.apple.accessibility.reduceMotionEnabled -bool true

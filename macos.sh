@@ -21,3 +21,7 @@ killall Dock
 
 # Enable "Reduce Motion" for accessibility
 defaults write NSGlobalDomain com.apple.accessibility.reduceMotionEnabled -bool true
+
+# Enable press-and-hold for keys in favor of key repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false

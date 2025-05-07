@@ -1,6 +1,7 @@
 alias home="cd $HOME"
 alias work="cd $HOME/work"
 alias study="cd $HOME/explore-code"
+alias school="cd $HOME/school"
 alias dotfiles="cd $HOME/.dotfiles"
 alias crm="cd $HOME/work/mini-crm"
 

@@ -42,13 +42,15 @@ brew install --cask alacritty
 # Code editors
 brew install --cask visual-studio-code
 brew install --cask sublime-text
+brew install --cask zed
 brew install --cask windsurf
 
 brew install --cask obsidian
+brew install anki
 
 # vim plugin
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Programming related...
 brew install nvm
@@ -118,6 +120,7 @@ brew install --cask telegram
 brew install --cask whatsapp
 brew install --cask lark
 brew install --cask slack
+brew install --cask zoom
 brew install --cask claude
 brew install --cask chatgpt
 brew install --cask lm-studio

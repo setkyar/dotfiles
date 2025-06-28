@@ -3,7 +3,8 @@ alias work="cd $HOME/work"
 alias study="cd $HOME/explore-code"
 alias school="cd $HOME/school"
 alias dotfiles="cd $HOME/.dotfiles"
-alias crm="cd $HOME/work/mini-crm"
+alias crm="cd $HOME/work/crm"
+alias yolo="claude --dangerously-skip-permissions"
 
 
 alias myip="curl https://checkip.amazonaws.com"

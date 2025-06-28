@@ -21,7 +21,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 brew install --cask font-jetbrains-mono
-
+brew install coreutils
 
 # Tools...
 brew install git
@@ -138,6 +138,7 @@ brew install supabase/tap/supabase
 npm install -g tldr
 brew install google-cloud-sdk
 
+brew install gh
 git clone git@github.com:setkyar/bin.git ~/bin
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
 touch ~/bin/llm.env

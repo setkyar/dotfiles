@@ -140,3 +140,5 @@ export PATH="$HOME/.bun/bin:$PATH"
 
 # Added by Windsurf
 export PATH="/Users/setkyar/.codeium/windsurf/bin:$PATH"
+
+. "$HOME/.local/bin/env"
